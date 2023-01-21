@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pizza_Order.Pizza">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAAAgEACAoAgCASAAAERAB6AgAMACACAAIgA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizza_Order.Veggie">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <AssociationLine Name="pizza" Type="Pizza_Order.Pizza" FixedFromPoint="true">
+      <Path>
+        <Point X="3.25" Y="3.875" />
+        <Point X="2" Y="3.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAQAAAAkAAAAAAAAABBAQACBQA=</HashCode>
+      <FileName>Veggie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pizza" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pizza_Order.Hawaiian">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAQAAAAkAAAAAAAAABBAQACBQA=</HashCode>
+      <FileName>Hawaiian.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pizza" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pizza_Order.MeatZZa">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAQAAAAkAAAAAAAAABBAQACBQA=</HashCode>
+      <FileName>MeatZZa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pizza" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pizza_Order.Chief">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <AssociationLine Name="iBuilder" Type="Pizza_Order.IBuilder" FixedFromPoint="true">
+      <Path>
+        <Point X="6.5" Y="3.5" />
+        <Point X="6.5" Y="3.142" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAQAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Chief.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="iBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pizza_Order.Abstract_Factory">
+    <Position X="8.5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="meat_Pizza_Factory" Type="Pizza_Order.Meat_Pizza_Factory" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.656" Y="3.546" />
+        <Point X="9.656" Y="4.227" />
+        <Point X="10.625" Y="4.227" />
+        <Point X="10.625" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="non_Meat_Pizza_Factory" Type="Pizza_Order.Non_Meat_Pizza_Factory" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="3.546" />
+        <Point X="8.875" Y="4.31" />
+        <Point X="7.938" Y="4.31" />
+        <Point X="7.938" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAACAAAAAQA=</HashCode>
+      <FileName>Abstract_Factory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="meat_Pizza_Factory" />
+      <Field Name="non_Meat_Pizza_Factory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pizza_Order.Non_Meat_Pizza_Factory">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Non_Meat_Pizza_Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizza_Order.Meat_Pizza_Factory">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Meat_Pizza_Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizza_Order.Program">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pizza_Order.IBuilder">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAQAAAAkAAAAAAAAABAAQACBQA=</HashCode>
+      <FileName>IBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
