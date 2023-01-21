@@ -32,7 +32,6 @@ namespace Pizza_Order
             }
 
             Console.WriteLine("\n\n\t\tThank you for choosing us");
-            Console.Write("\n\tHere is your Order..! My great teacher \"Dara\"");
             for (int i = 0; i < 5; i++)
             {
                 Thread.Sleep(700);
